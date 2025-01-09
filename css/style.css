@@ -1,0 +1,51 @@
+@import url("navbar.css");
+@import url("project.css");
+@import url("about.css");
+@import url("contact.css");
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right,#1abc9c, #fafafa, #1abc9c);
+
+}
+
+.content {
+    text-align: center;
+    padding: 2rem;
+    color: #34495e;
+    background-color: #f9f9f9; /* Arka plan rengi */
+    margin: 2rem auto;
+    width: 80%; /* Genişlik */
+    max-width: 900px; /* Maksimum genişlik */
+    border: 1px solid #dcdcdc; /* Çerçeve */
+    border-radius: 8px; /* Köşeler */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Gölge */
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #1abc9c;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content {
+    animation: fadeIn 1.5s ease-in-out;
+}
