@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,30 +30,6 @@
       </form>
     </div>
 
-    <script>
-      function handleSubmit(event) {
-        event.preventDefault();
-
-        // Tüm inputları seç
-        const inputs = document.querySelectorAll("#name, #surname, #email, #message");
-        let isValid = true;
-
-        // Her bir inputu kontrol et
-        inputs.forEach((input) => {
-          if (!input.value.trim()) {
-            isValid = false;
-            input.style.border = "2px solid red"; // Hatalı alanlara kırmızı kenarlık
-          } else {
-            input.style.border = ""; // Düzeltildiyse kırmızı kenarlığı kaldır
-          }
-        });
-
-        if (!isValid) {
-          alert("Lütfen tüm alanları doldurunuz!");
-        } else {
-          alert("Mesajınız gönderildi!");
-        }
-      }
-    </script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
